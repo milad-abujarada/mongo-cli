@@ -99,7 +99,6 @@ function editRestaurant(collection){
 	let name = prompt('Enter the name of the restaurant you would like to update: ');
 	collection.count({name:name}, function(err, result){
 		if(result){
-			console.log("\nplease enter the new data when prompted and if you don't wish to change the data in the prompted field then just press enter.");
 			let newName = prompt("\nEnter the new name: ");
 			let newStreet = prompt("\nEnter the new street address: ");
 			let newZipcode = prompt("\nEnter the new Zipcode: ");
